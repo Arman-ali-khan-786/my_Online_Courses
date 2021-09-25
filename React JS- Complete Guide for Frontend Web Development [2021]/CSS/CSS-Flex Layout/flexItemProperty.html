@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 ">
+        <title>Flex container properties</title>
+        <style>
+            *{
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .container{
+                width: 100vw;
+                background-color: aqua;
+                box-sizing: border-box;
+                padding: 32px;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: stretch; /* default value*/
+            }
+            .items{
+                background-color: blueviolet;
+                color: antiquewhite;
+                padding: 32px;
+                font-size: 24px;
+                margin: 8px;
+                text-align: center;
+                flex-grow: 1;  /* 0 is the default value*/
+            }
+            .items:nth-child(2){
+                background-color: bisque;
+                color: black;
+                flex-grow: 2;
+                order: -1; /* bydefaut it is zero, now it brings div2 to 1st position*/
+
+            }
+            .items:nth-child(3){
+                background-color: rgb(205, 243, 224);
+                color: rgb(34, 243, 26);
+                flex-grow: 0; /*  flex grow and shrink doesnot work on the same element so 1 at a time*/
+                flex-shrink: 2;
+                order: 1; /* bydefaut it is zero, now it brings div3 to last position*/
+            }
+            .container2{
+                width: 100vw;
+                height: 400px;
+                background-color: aqua;
+                box-sizing: border-box;
+                padding: 32px;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+            }
+            .items2{
+                background-color: blueviolet;
+                color: antiquewhite;
+                padding: 32px;
+                font-size: 24px;
+                margin: 8px;
+                text-align: center;
+                flex-basis: 300px; /* min width*/
+            }
+            .items2:nth-child(even){
+                align-self: center;
+            }
+            .items2:nth-child(1){
+                align-self: flex-end;
+            }
+            .items2:nth-child(3){
+                align-self: flex-start;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="items">div1</div>
+            <div class="items">div2</div>
+            <div class="items">div3</div>
+            <div class="items">div4</div>
+        </div>
+        <br>
+        <div class="container2">
+            <div class="items2">div1</div>
+            <div class="items2">div2</div>
+            <div class="items2">div3</div>
+            <div class="items2">div4</div>
+        </div>
+    </body>
+</html>

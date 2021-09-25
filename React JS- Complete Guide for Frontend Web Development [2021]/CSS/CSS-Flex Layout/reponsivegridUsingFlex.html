@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive Grid Using Flex</title>
+        <style>
+            *{
+                margin: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+            #topbar{
+                width: 100%;
+                min-width: 100px;
+                height: 60px;
+                background-color: lightblue;
+                padding: 10px;
+                box-shadow: 4px 0  10px black;
+                position: static;
+                top: 0;
+            }
+            .logo{
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 32px;
+                font-weight: 900;
+                color: rgb(241, 30, 188);
+                margin-right: 16px;
+            }
+            .menu-items{
+                padding: 5px;
+                font-size: 16px;
+                color: black;
+                font-weight: bold;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+            }
+            .left-menu{
+                display: flex;
+                align-items: center;
+            }
+            .right-menu{
+                display: flex;
+                align-items: center;
+                margin: 0px 16px;
+                display: flex;
+                justify-content: space-around;
+            }
+            .search-wrapper{
+                position: relative;
+            }
+
+            .search-wrapper > img{
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                left: 220px;
+                top: 4px;
+            }
+            input{
+                width: 250px;
+                height: 26px;
+                border: none;
+                border-radius: 16px;
+            }
+            #pp{
+                width: 45px;
+                height: 40px;
+                border-radius: 20px;
+            }
+            .right-menu > img{
+                width: 25px ;
+                height: 25px;
+                margin: 0 8px;
+            }
+            main{
+                padding: 4% 0;
+                background-color: aqua;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            section{
+                margin: auto;
+                min-width: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .blog-cards{
+                width: 23%;
+                min-width: 200px;
+                height: 200px;
+                background: linear-gradient(to right, lightblue,red);
+                margin: 8px;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="topbar">
+            <nav>
+                <div class="left-menu">
+                    <p class="logo">PRINTO</p>
+                    <p class="menu-items">services</p>
+                    <p class="menu-items">location</p>
+                    <p class="menu-items">contact</p>
+                </div>
+                <div class="right-menu">
+                    <div class="search-wrapper">
+                        <input type="text" id="search-bar">
+                        <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt="search-icon">
+                    </div>
+                    <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png" alt="bell-icon">
+                    <img id="pp" src="https://pbs.twimg.com/profile_images/801760361917521923/5WsZ1UYM_400x400.jpg" alt="pic">  
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+                <div class="blog-cards"></div>
+            </section>
+        </main>
+        
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complex GridLayouts</title>
+        <style>
+            *{
+                margin: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                scroll-behavior: smooth;
+            }
+            body{
+                font-size: 24pox;
+            }
+            #header{
+                background-color: lightseagreen;
+                padding: 24px;
+                grid-area: header;
+            }
+            #sidebar{
+                background-color: lightcoral;
+                padding: 24px;
+                 grid-area: sidebar;
+            }
+            #main{
+                background-color: lightblue;
+                padding: 24px;
+                height: 460px;
+                 grid-area: main ;
+            }
+            #aside{
+                background-color: bisque;
+                padding: 24px;
+                 grid-area: aside ;
+            }
+            #footer{
+                background-color: lightseagreen;
+                padding: 24px;
+                 grid-area: footer;
+            }
+            #grid-container{
+                display: grid;
+                grid-template-areas: 
+                'header header header header header header'
+                'sidebar main main main main aside'
+                'footer footer footer footer footer footer';
+            }
+
+            @media (max-width:900px) {
+                #grid-container{
+                display: grid;
+                grid-template-areas: 
+                'header header header header header header'
+                'sidebar sidebar sidebar sidebar sidebar sidebar'
+                'main main main main main main'
+                'aside aside aside aside aside aside'
+                'footer footer footer footer footer footer';
+            }
+            @media (max-width:400px) {
+                #grid-container{
+                display: grid;
+                grid-template-areas: 
+                'header header header header header header'
+                'sidebar sidebar sidebar sidebar sidebar sidebar'
+                ' main main main main main main'
+                'aside aside aside aside aside aside'
+                'footer footer footer footer footer footer';
+                }
+            }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grid-container">
+            <div id="header">Header</div>
+            <div id="sidebar">Sidebar</div>
+            <div id="main">Main</div>
+            <div id="aside">Aside</div>
+            <div id="footer">Footer</div>
+        </div>
+    </body>
+</html>

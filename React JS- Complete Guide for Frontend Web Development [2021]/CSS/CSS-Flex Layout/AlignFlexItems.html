@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 ">
+        <title>Flex container properties</title>
+        <style>
+            *{
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .container{
+                width: 100vw;
+                background-color: aqua;
+                box-sizing: border-box;
+                
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: stretch; /* default value*/
+            }
+            .container2{
+                width: 100vw;
+                height: 400px;
+                background-color: aqua;
+                box-sizing: border-box;
+                padding: 32px;
+                text-align: center;
+                display: flex;
+               /* flex-direction: row;   default value*/
+                align-items: stretch; /* default value*/
+            }
+            .container3{
+                width: 100vw;
+                height: 400px;
+                background-color: aqua;
+                box-sizing: border-box;
+                padding: 32px;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start; 
+            }
+            .container4{
+                width: 100vw;
+                height: 400px;
+                background-color: aqua;
+                box-sizing: border-box;
+                padding: 32px;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;  /*centre value also*/ 
+                /* align-content: ;  is another property to be used if we want to shift items across cross(horizontal(x-axis)) axises*/
+            }
+            .items{
+                background-color: blueviolet;
+                color: antiquewhite;
+                padding: 32px;
+                margin: 8px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="items">div1</div>
+            <div class="items">div2</div>
+            <div class="items">div3</div>
+            <div class="items">div4</div>
+        </div>
+        <br>
+        <div class="container2">
+            <div class="items">div1</div>
+            <div class="items">div2</div>
+            <div class="items">div3</div>
+            <div class="items">div4</div>
+        </div>
+        <br>
+        <div class="container3">
+            <div class="items">div1</div>
+            <div class="items">div2</div>
+            <div class="items">div3</div>
+            <div class="items">div4</div>
+        </div>
+        <br>
+        <div class="container4">
+            <div class="items">div1</div>
+            <div class="items">div2</div>
+            <div class="items">div3</div>
+            <div class="items">div4</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movies Grid Using GridLayouts</title>
+        <style>
+            *{
+                margin: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                scroll-behavior: smooth;
+            }
+            body{
+                background-color: black;
+            }
+
+            h1{
+                color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif,cursive;
+                text-align: center;
+                letter-spacing: 4px;
+                font-size: 24px;
+                margin: 30px;
+            }
+
+            #grid-container{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;  /* define 5 columns and give equal width to all*/
+                grid-gap: 20px;
+                /* row-gap: 32px;
+                column-gap: 48px;*/
+            }
+
+            img{
+                width: 100%;
+                max-width: 400px;
+                height: 440px;
+                box-sizing: border-box;
+            }
+            img:hover{
+                animation: zoom 1s forwards;
+            }
+            @keyframes zoom {
+                0%{
+                   transform: scale(1);
+                   box-shadow: 0 2px 7px #ccc;
+                }
+                100%{
+                    transform: scale(1.1);
+
+                }                
+            }
+
+            @media (max-width: 900px) {
+                #grid-container{
+                grid-template-columns: auto auto auto ;  /* define 3 columns and give equal width to all*/
+                }
+            }
+            @media (max-width: 400px) {
+                #grid-container{
+                grid-template-columns: auto auto ;  /* define 2 columns and give equal width to all*/
+                }  
+            }
+            @media (max-width: 320px) {
+                #grid-container{
+                grid-template-columns: auto ;  /* define 1 column and give equal width to all*/
+                }  
+            }
+        </style>
+    </head>
+    <body>
+        <h1>MOVIES</h1>
+        <div id="grid-container">
+
+            <div class="Poster-wrapper">
+                <img src="https://www.filmjabber.com/movie-poster-thumbs/the-tomorrow-war-movie
+                          -poster-6679.jpg" alt="the-tomorrow-war-movie">
+                <p></p>
+            </div>
+            <div class="Poster-wrapper">
+                <img src="https://www.filmjabber.com/movie-poster-thumbs/free-guy-movie-poster-6492.jpg" 
+                alt="free-guy-movie-">
+                <p></p>
+            </div>
+            <div class="Poster-wrapper">
+                <img src="https://stat1.bollywoodhungama.in/wp-content/uploads/2020/12/Wonder-Woman-1984-306x393.jpg" 
+                alt="Wonder-Woman-1984-movie">
+                <p></p>
+            </div>
+            <div class="Poster-wrapper">
+                <img src="https://www.joblo.com/wp-content/uploads/2021/06/last-night-soho-1-400x600.jpg" 
+                alt="last-night-soho-movie">
+                <p></p>
+            </div>
+            <div class="Poster-wrapper">
+                <img src="https://cdn.shopify.com/s/files/1/0969/9128/products/1917_-_Sam_Mendes_-_Hollywood_War_Film_Classic_English_Movie_Poster_8ebc60d6-7299-4918-80db-989d0f188018.jpg?v=1582781093" 
+                alt="1917-movie">
+                <p></p>
+            </div>
+            <div class="Poster-wrapper">
+                <img src="https://i.pinimg.com/564x/ed/05/1d/ed051db1a6797ab2a6088dd0d1ae49fb.jpg" 
+                alt="search And Destroy-movie">
+                <p></p>
+            </div>
+            <div class="Poster-wrapper">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDkxODhlNmItYjhiMC00ZjNmLWE2YmMtOTQ3NmQxM2YzOGFiXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg" 
+                alt="Jonny English-movie">
+                <p></p>
+            </div>
+            <div class="Poster-wrapper">
+                <img src="https://i.pinimg.com/474x/ea/f9/46/eaf94606aafbc2cf52696dfa8bc67e9d--english-movies-hollywood.jpg" 
+                alt="wait is real-movie">
+                <p></p>
+            </div>
+            <div class="Poster-wrapper">
+                <img src="https://c4.wallpaperflare.com/wallpaper/852/644/1008/alien-movie-poster-sigourney-weaver-movie-poster-wallpaper-preview.jpg" 
+                alt="alien-movie">
+                <p></p>
+            </div>
+            <div class="Poster-wrapper">
+                <img src="https://imgix.ranker.com/user_node_img/4269/85376270/original/call-of-the-wild-photo-u3?auto=format&q=60&fit=crop&fm=pjpg&w=375" 
+                alt="call-of-the-wild-movie">
+                <p></p>
+            </div>
+
+        </div>
+    </body>
+</html>
