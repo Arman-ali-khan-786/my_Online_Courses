@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceCream Bussiness</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <H1>Welcome To FALTU ICE CREAM Shop</H1>
+    <H6> ---> Good Quality IceCream's</H6>
+    <button id="magic">Magic</button>
+</body>
+<script>
+    var btn = document.getElementById('magic')
+    btn.addEventListener('click' , () => {
+        if(document.body.style.backgroundColor === "black"){
+            document.body.style.backgroundColor = "antiquewhite"
+            document.body.style.color = "black"
+        }
+        else{
+            document.body.style.backgroundColor = "black"
+            document.body.style.color = "white"
+        }
+    })
+    let iceCreamFlavors = [
+    { name: "Chocolate", type: "Chocolate", price: 2 }, 
+    { name: "Strawberry", type: "Fruit", price: 1 }, 
+    { name: "Vanilla", type: "Vanilla", price: 2 }, 
+    { name: "Pistachio", type: "Nuts", price: 1.5 }, 
+    { name: "Neapolitan", type: "Chocolate", price: 2}, 
+    { name: "Mint Chip", type: "Chocolate", price: 1.5 },
+    { name: "Raspberry", type: "Fruit", price: 1},
+    ];
+    // { scoops: [], total: }
+    let transactions = []
+    transactions.push({ scoops: ["Chocolate", "Vanilla", "Mint Chip"], total: 5.5 })
+    transactions.push({ scoops: ["Raspberry", "StrawBerry", "Chocolate"], total: 4 })
+    transactions.push({ scoops: ["Vanilla", "Vanilla"], total: 4 })
+    let total = transactions.reduce((acc, curr)=> acc+curr.total,0)
+    console.log(`Total income ${total}`)
+
+    let flavorDistribution = transactions.reduce((acc, curr) => {
+    curr.scoops.forEach(scoop => {
+        if (!acc[scoop]) {
+        acc[scoop] = 0;
+        }
+        acc[scoop]++;
+    })
+        return acc;
+    }, {}) // { Chocolate: 1, Vanilla: 3, Mint Chip: 1, Raspberry: 1, StrawBerry: 1 }
+    console.log(flavorDistribution)
+</script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+<script>
+    function myName(name){
+        var msg = "Hola"+" "+name
+        return msg;
+    }
+    console.log(myName("Arman"))
+    document.write(myName('Arman')) // to display in the webpage
+
+    // callback concepts
+
+    function myAge(){
+        document.write("I am 19 years old .")
+        console.log("I am 19 years old .")
+
+    }
+    setTimeout(myAge, 3000);
+    setTimeout(()=>{
+        alert("text gonna change boom magic!!!!!")
+    },2000)
+    let x = 2 
+    let y = null
+    x ??= 3    // it doesnot have effect bcz x already has a value
+    y ??= 2    // it has effect bcz y has a null value
+ 
+    console.log(x , y)   // 2 2
+
+    // day-2
+    let numbers = [ 1, 2, 3, 4, 5]
+    numbers.forEach(e => {
+        document.write("\n",e) 
+        document.write()       
+    });
+    numbers.forEach((no, index) => console.log(`Number ${no} ${index}`));
+
+    // for of loop
+    const iterable = [10, 20, 30];
+
+    for (const value of iterable) {
+    console.log(value);
+    }
+
+    //find()
+    let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip"];
+    console.log(iceCreamFlavors.find(flavor => flavor === "Chocolate")) // "Chocolate"
+
+    // filter()
+    let flow = [{name : "Arman", age:"19", rela:"frnd"},
+    {name : "Rattu", age:"20", rela:"frnd"},
+    {name : "Ayush", age:"19", rela:"frnd"},
+    {name : "Jay", age:"21", rela:"frndnot"}
+    ]
+    console.log(flow.filter(flo => flo.name === "Arman"))
+    console.log(flow.filter(flk => flk.rela !== "frndnot"))
+
+
+    // some()
+    console.log(flow.some(fli => fli.rela === "frnd")) // checks jay is my friend or not in this case he is not
+    
+    // map()
+    const ice = [
+    { name: "Chocolate", type: "Chocolate" }, 
+    { name: "Strawberry", type: "fruit"}, 
+    { name: "Vanilla", type: "Vanilla"}, 
+    { name: "Pistachio", type: "Nuts"}, 
+    { name: "Neapolitan", type: "Chocolate"}, 
+    { name: "Mint Chip", type: "Chocolate"}
+    ];
+    ice.map(flavor => {
+    flavor.price = 1;
+    return flavor;
+    }) // every item now has a new property price: 1
+    console.log(ice)
+    console.log(ice.map(fij => {
+        fij.quantity = 1;
+        return fij;
+    }))
+
+    // reduce()
+    let sales = [{
+        date : '2021-05-01',
+        amount: 20
+        },
+        {
+        date : '2021-05-01',
+        amount: 1
+        },
+        {
+        date : '2021-05-01',
+        amount: 10
+        }
+    ]
+    console.log(sales.reduce((acc , curr) => acc+curr.amount , 0))
+</script>
+</html>

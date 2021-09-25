@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    width: 100%;
+    background-color:#565681 ;
+    text-align: center;
+}
+#amazon-logo{
+    width: 200px;
+    height : 65px;
+}
+main{
+    display: flex;
+}
+#div1{
+    margin-top: 20px;
+    position: relative;
+    width: 40%;
+}
+#div2{
+    width: 60%;
+}
+#watch-img{
+    width: 500px;
+    height: 550px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#time{
+    color: aliceblue;
+    font-size: 30px;
+    position: absolute;
+    z-index: 2;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+/* heading section*/
+#info{
+    padding: 10px;
+    margin-left: 12px;
+}
+#wtch-heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 12px auto 16px auto;
+    font-size: 42px;
+}
+#info > p {
+    font-size: 18px;
+    margin: 8px auto;
+}
+
+/* Color selction section*/
+#skin-selector{
+    margin-left: 12px;
+    padding: 10px;
+}
+#skin-selector > h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin: 8px auto 12px auto;
+}
+#color-select{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+.colors{
+    margin-right: 10px;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+}
+#red{
+    background-color: #ca3d22;
+}
+#black{
+    background-color:  #23211f;
+}
+#blue{
+    background-color:  #565681;
+}
+#pink{
+    background-color:  #e9c7be;
+}
+#purple{
+    background-color:  #8a5362 ;
+}
+/* features section*/
+#features-selector{
+    margin: 10px 12px 10px 12px;
+    padding: 10px;
+}
+#features-selector > h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+#btn{
+    display: flex;
+}
+.fbtn{
+    font-size: 16px;
+    margin: 14px 12px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px black;
+    border: none;
+    outline: none;
+    background-color: rgb(233, 229, 229);
+}
+#buy-btn{
+    width: 180px;
+    text-align: center;
+    margin: 16px 0 0 36px;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 12px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 4px white;
+    border-radius: 8px;
+    background-color: rgb(228, 148, 1);
+}
+.fas fa-heartbeat{
+    background-color: #23211f;
+    width: 30px;
+    height: 30px;
+}
