@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let num1 = 10;
+    console.log(num1)
+    const name = "Messi";
+    // num2 = 40 it's give errors
+    const sen = `${name} has number ${num1}`
+    console.log(sen)
+    function getName(name){
+        return `${name}`;
+    }
+    console.log(`Hello ${getName(name)}`)
+
+    // rgba(red,green,blue,alpha) // template strings
+    let red = 200;
+    let green = 155;
+    let blue = 100;
+    let alpha = 0.7;
+    const rgbaExp = `rgba(${red},${green},${blue},${alpha})`
+    console.log(rgbaExp)
+
+    // Arrow functions
+
+    const greet= name => {   //(name)
+        return (`Hola ${name}`)
+    }
+    console.log(greet(name))
+
+    const mGreet = name => `Hello ${name}`
+
+    console.log(mGreet(name)) 
+
+    // Rest operator 
+     
+        // const mSum = (num1, num2) => console.log(num1+num2)
+        // mSum(1, 2, 3, 4, 5, 6, 7) ----> output : 3
+
+        const mSum = (...args) => console.log(args)
+        mSum(1, 2, 3, 4, 5, 6, 7)
+
+        const Sum = (...args) =>{
+            let sum =0;
+            for(let i = 0 ; i<args.length ; i++){
+                sum+= args[i];
+            }
+            return sum;
+        }
+        console.log(Sum(1,2,3,4,5,6,7,8,9,10))
+
+        // Spread Operator
+
+        let mArr1 = [1, 2, 3, 4, 5];
+        // console.log([...mArr1])
+        let mArr2 = [...mArr1]  //creating a copy of the 1st array
+        mArr1.push(6)
+        console.log(`First Array ${mArr1}`)
+        console.log(`Second Array ${mArr2}`)
+
+        // let mArr3 = mArr1.concat(mArr2)   (old way of concat)
+        // console.log(mArr3)  
+        let mArr3 = [...mArr1, ...mArr2]
+        console.log(mArr3)
+
+        let mArr4 = [0,...mArr1,0, ...mArr2,0]
+        console.log(mArr4)
+
+        let obj1 = {
+            firstname : 'BulBili',
+            lastname : 'ChulBhuli'
+        }
+        let obj2 = {
+            age : 34
+        }
+        let obj3 = {...obj1, ...obj2}
+        console.log(obj3)
+
+        // Destructing 
+        
+
+
+        
+</script>
+</html>

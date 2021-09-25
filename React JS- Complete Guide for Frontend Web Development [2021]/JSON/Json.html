@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JSON</title>
+</head>
+<body>
+    <h1>INTRODUCTION TO JSON</h1>
+    
+</body>
+<script>
+    // object in JSON
+     var obj = {
+         "name" : 'ARMAN',
+         "age" : 19,
+         "score" : {
+             "ICP" : 90.5,
+             "DSA" : 85.7
+         }
+     }
+     console.log(obj.name)
+
+    // to convert json object to a string
+     var strobj = JSON.stringify(obj)
+     console.log(strobj)
+
+    // to convert back to string
+    console.log(JSON.parse(strobj))
+
+    // Array in JSON
+
+      var arry = [ 1 , 2 , 3 , 4 , 5 ]
+      console.log(arry[1])
+
+    // JSON Array of Objects
+     var aryobj = [ {
+            "name" : 'ARMAN',
+            "age" : 19} ,
+         {
+            "name" : 'RATTU',
+            "age" : 20},
+         {
+            "name" : 'AYUSH',
+            "age" : 18},
+         {
+            "name" : 'JAY',
+            "age" : 21}
+        ]
+        console.log(aryobj[3])
+</script>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js ToDoList</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        body{
+            background-color: lightblue;
+        }
+        header{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        #updation{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        #updation > #add-item, #update-item , #remove-item{
+            box-shadow: 2px 2px 6px black;
+            border-radius: 3px;
+            padding: 10px;
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        header > #list-box{
+            margin: auto;
+            font-size: 20px;
+            width: 500px;
+            padding: 16px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+        }
+        #updation > #add-item:focus,#update-item:focus,#remove-item:focus{
+            border: none;
+        }
+        section{
+            width: 900px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        #todo-list{
+            display: flex;
+            flex-direction: column;
+        }
+        li{
+            color: rgb(0, 182, 0);
+            width: 650px;
+            margin: 5px auto;
+            background-color: aliceblue;
+            padding: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+        h1{
+            margin: 10px;
+            padding: 10px;
+            color: darkcyan;
+            text-shadow: 1px 1px 10px darkcyan;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input id="list-box" type="text" placeholder="Enter task here...">
+        <br>
+        <div id="updation">
+            <button id="add-item">Add Task</button>
+            <button id="update-item">Update first item</button>
+            <button id="remove-item">remove first item</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Your Tasks</h1>
+            <ul id="todo-list"></ul>
+        </section>
+    </main>
+    <script type="text/javascript" src="todoList2.js"></script>
+</body>
+</html>
