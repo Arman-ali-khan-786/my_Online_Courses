@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Adding Icons</title>
+        <script src="https://kit.fontawesome.com/24e6e96da6.js" crossorigin="anonymous"></script>
+        <style>
+            button{
+                color: white;
+                font-size: 20px;
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                outline: none;
+            }
+            #btn-facebook{
+                background-color: #3b5993;
+            }
+            #btn-github{
+                background-color: darkblue;
+            }
+            #btn-google{
+                background-color: #dd4b3d;
+            }
+            .label{
+                padding-left: 8px;
+            }
+            img{
+                width: 22px;
+                height: 22px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="using-icons">
+            <h2>Using Icons in Buttons</h2>
+            <button id="btn-facebook"><i class="fab fa-facebook"></i><span class="label">Facebook</span></button>
+            <button id="btn-github"><i class="fab fa-github-square"></i><span class="label">Github</span></button>
+            <button id="btn-google"><i class="fab fa-google"></i><span class="label">Google</span></button>
+        </div>
+        <div class="using-images">
+            <h2>Using Images in Buttons</h2>
+            <button id="btn-facebook"><img src="https://png.pngtree.com/element_our/png_detail/20181011/facebook-social-media-icon-design-template-vector-png_126986.jpg" alt="facebook-logo"> <span  class="label">Facebook</span></button>
+            <button id="btn-github"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="github-logo"> <span class="label">Github</span></button>
+            <button id="btn-google"><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="google logo"><span class="label">Google</span></button>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Adding text shadow</title>
+        <style>
+            div{
+                margin: 10px;
+                width: 400px;
+                height: 400px;
+                background-color: lightgreen;
+                box-sizing: border-box;
+                border-radius: 4px;
+                box-shadow: 4px 4px 10px lightgreen;
+                display: inline-block;
+            }
+            div:hover{
+                transform: scale(1.01);
+            }
+            main,div{
+                padding: 10px;
+            }
+            .id{
+                margin: 10px;
+                width: 400px;
+                height: 400px;
+                background-color: lightcoral;
+                box-sizing: border-box;
+                border-radius: 4px;
+                box-shadow: 4px 4px 10px lightcoral;
+                display: inline-block;
+
+            }
+            h1{
+                color: blue;
+                text-shadow: 2px 4px 10px rebeccapurple; /*1st- horizontal , 2nd - vertical and 3rd value is for adding blur(10px) */
+
+            }
+            #h1{
+                color: brown;
+                text-shadow: 3px 4px rebeccapurple; /* blur is not added so it looks like reflection*/
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>CSS STYLING</h1>
+            <h1 id="h1">CSS STYLING</h1>
+            <div>
+                <h1>BOX shadow</h1>
+            </div>
+            <div class="id">
+                <h1>BOX shadow</h1>
+            </div>
+        </main>
+    </body>
+</html>

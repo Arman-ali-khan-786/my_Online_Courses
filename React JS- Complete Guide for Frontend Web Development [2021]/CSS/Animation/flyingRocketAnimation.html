@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Animation Properties</title>
+        <style>
+            *{
+                margin: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+            body{
+                background-image: url("https://img.freepik.com/free-vector/mars-landscape-alien-planet-martian-background_107791-1781.jpg?size=626&ext=jpg&ga=GA1.2.1933098019.1629676800");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            img{
+                width: 300px;
+                height: 350px;
+                position: absolute;
+                bottom: 24px;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: fly 5s 1 
+                ease-in forwards;
+
+            }
+            @keyframes fly {
+                0%{
+                    transform: translate(-50% , 0);
+                }
+                100%{
+                    transform: translate(-50%, -100vh);
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://www.pngall.com/wp-content/uploads/2/Rocket-PNG.png" alt="rocket">
+    </body>
+</html>
