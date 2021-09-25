@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP's in JavaScript</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var shipmentDetails = {
+        carName : "McLaren 720S",
+        price : '4.65 crore',
+        owner : 'Arman Ali Khan',
+        country: 'India',
+        getOwner : function(){
+           return this.owner
+        },
+        getCar : function(){
+            return this.carName
+        },
+        getPrice : function(){
+            return this.price
+        },
+        getCountry : function(){
+            return this.country
+        }
+    }
+    console.log(shipmentDetails.getOwner());
+    console.log(shipmentDetails.getCar());
+    console.log(shipmentDetails.getPrice());
+    console.log(shipmentDetails.getCountry());
+
+    // constructor function 
+
+    var person = {        // person p should be small
+        name :'Jack',
+        age : 19,
+        year : '2001'
+    }
+    function Person(name , age  , year){  //constructor function && Person P should be capital
+        this.name = name;
+        this.age = age;
+        this.year = year;
+    }
+    Person.prototype.country = function(country){
+        this.country= country;
+    }
+    Person.prototype.role = function(){  // one function/prototype for all instances of person
+            console.log(this.name," is a college student.")}
+    var Arman = new Person('Arman' , 19 , '2002');
+    var Rattu = new Person('Rattu' , 20 , '2001');
+    var Ayush = new Person('Ayush' , 19 , '2002');
+    var Jay   = new Person('Jay'   , 21 , '2000')
+    console.log(Arman)
+    Arman.role()
+    Arman.country("INDIA")
+    console.log(Rattu)
+    Rattu.role()
+    console.log(Ayush)
+    Ayush.role()
+    console.log(Jay)
+    Jay.role()
+</script>
+</html>
