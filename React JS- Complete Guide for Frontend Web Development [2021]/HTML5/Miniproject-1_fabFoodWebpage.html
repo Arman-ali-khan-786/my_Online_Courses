@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTf-8">
+        <title>Favorite Food webpage</title>
+        <style>
+            *{
+                
+                scroll-behavior: smooth;
+                
+            }
+            body{
+                margin: 0;
+                background-color: #def3fd;
+            }
+            .topbar{
+                width: 100%;
+                height: 40px;
+                background-color: #779ecb;
+               
+                
+               
+            }
+            .menu-item{
+                display: inline;
+                font-size: 23px;
+                font-weight: 700;
+                padding-right: 10px;
+                
+                
+            }
+            .item-list{
+                width: 100%;
+                height: 180px;
+            
+            }
+            .food{
+                width: 100%;
+                height: 500px;
+                text-align: center;
+                
+            }
+            #label{
+                font-size: 20px;
+                font-weight: 300;
+            }
+            #heading,.items{
+                padding-left: 30px;
+            }
+            #heading{
+                font-size: larger;
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="topbar">
+            <ul style="list-style-type: none; margin: 0; padding: 5px 20px;">
+                <li class="menu-item">Index</li>
+                <li class="menu-item">Food</li>
+                <li class="menu-item">About</li>
+            </ul>
+        </div>
+        <div class="item-list">
+            <h3 id="heading">Top 5 Favorite Foods :</h3>
+            <li class="items"><a href="#first">Biryani</a></li>
+            <li class="items"><a href="#second">Pizza</a></li>
+            <li class="items"><a href="#third">Lasagana</a></li>
+            <li class="items"><a href="#fourth">Burger</a></li>
+            <li class="items"><a href="#fifth">Caesar Salad</a></li>
+        </div>
+        <div id="first" class="food">
+            <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2021/03/Best-Mutton-Biryani-Recipe.jpg" alt="Biryani" width="500" height="400">
+            <p id="label">Biryani</p>
+        </div>
+        <div id="second" class="food">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2015/10/pizza-recipe-1.jpg" alt="Pizza" width="500" height="400">
+            <p id="label">Pizza</p>
+            
+        </div>
+        <div id="third" class="food">
+            <img src="https://www.simplyrecipes.com/thmb/o21f7yISawuyh4zKJ8IiErwue28=/2000x1333/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2012__11__Vegetarian-Lasagna-LEAD-1-6173a71bfd1347aa8d7659150e87b8f4.jpg" alt="Lasagana" width="500" height="400">
+            <p id="label">Lasagana</p>
+        </div>
+        <div id="fourth" class="food">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/gb1wciyzasmkgua70fn9" alt="Burger" width="500" height="400">
+            <p id="label">Burger</p>
+            
+        </div>
+        <div id="fifth" class="food">
+            <img src="https://i.ytimg.com/vi/SEBqdX2Y4qk/maxresdefault.jpg" alt="Caesar Salad" width="500" height="400">
+            <p id="label">Caesar Salad</p>
+        </div>
+        
+    </body>
+</html>

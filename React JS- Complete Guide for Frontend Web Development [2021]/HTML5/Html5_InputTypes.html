@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Html5 - Input Types</title>
+        <style>
+            .input-items{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body style="margin: 0; background-color: black; color: gold;">
+        <h1 style="text-align: center; font-size: 42px;">SignIn</h1>
+        <form action="" style="margin: auto; width: 600px; background-color: silver; color: black; font-size: large; font-weight: 5; padding: 24px;">
+            Username :<br>
+            <input class="input-items" type="text" name="username"><br>
+            Password :<br>
+            <input class="input-items" type="password" name="password"><br>
+            Last worked :<br>
+            <input class="startdate" type="date" name="date" max="1999-01-01"><input class="enddate" type="date" name="enddate" min="2010-01-01"><br><!-- date type max and min are the restrictions or can say a type of limit-->
+            <input class="input-items" type="reset" value="Reset"> <!-- reset button-->
+            <br>
+            Upload Pic : <br>
+            <input class="input-items" type="file" name="image" id=""> <!-- file type (can take multiple files)-->
+        </form>
+        
+    </body>
+</html>
