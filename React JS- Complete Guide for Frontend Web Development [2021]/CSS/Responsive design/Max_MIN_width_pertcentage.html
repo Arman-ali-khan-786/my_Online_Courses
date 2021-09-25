@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 ">
+        <title>
+            Use of Max and min width property with%
+        </title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+            }
+            body{
+                position: relative;
+                height: 100vh;
+            }
+            header{
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+                background: linear-gradient(to right , lightgreen,rgb(223, 241, 162));
+                font-size: 20px;
+                color: antiquewhite;
+            }
+            main{
+                width: 100%;
+                padding: 6px;
+                margin: 10px 0;
+            }
+            .pic-wrapper{
+                width: 100%;
+                text-align: center;
+            }
+            .pic-wrapper > img{
+                width: 100%;
+                max-width: 800px;
+               justify-content: baseline;
+
+            }
+            .pic-wrapper > p{
+                text-align: center;
+                font-size: 20px;
+                font-weight: bolder;
+                color: blueviolet;
+            }
+            #desc{
+                text-align: center;
+                width: 100%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            #desc > p{
+                width: 100%;
+                max-width:700px;
+                color: blanchedalmond;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Hello</h2>
+        </header>
+        <main>
+           <div class="pic-wrapper">
+               <img src="https://st2.depositphotos.com/1723045/6572/i/600/depositphotos_65725833-stock-photo-rosenborg-castle-in-copenhagen-denmark.jpg" alt="denmark place">
+               <p>Kingdom of Denmark</p>
+            </div>
+            <div id="desc">
+                <p>The Danish Royal Family inhabit a range of residences around Denmark. Historically all the residences of the royal family were privately owned. With the introduction of the new Constitution in 1849, some of the residences were claimed as property of the "Kingdom of Denmark". Some of the palaces are still privately owned by the Queen or other members of the Royal Family. The Agency for Palaces and Cultural Properties (the Danish equivalent of the Historic Royal Palaces Agency) is responsible for the management and upkeep of some of the royal palaces and gardens.[1][2]
+
+                    The Danish Royal Family traditionally occupy different royal residences during different seasons of the year. In summer, Queen Margarethe resides at Marselisborg Palace or Graasten Palace. In the winter, she resides at Amalienborg, whereas her residence during spring and autumn is Fredensborg Palace. Sometimes members of the royal family spend time on the Royal Yacht Dannebrog, especially when on official visits overseas and on summer cruises in Danish waters. </p>
+            </div>
+        </main>
+        <footer>
+            <h2>bye</h2>
+        </footer>
+    </body>
+</html>

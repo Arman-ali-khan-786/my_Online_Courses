@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 ">
+        <title>
+            Use of Max and min width property with%
+        </title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+            }
+            body{
+               
+                height: 100vh;
+            }
+            header{
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+                background: linear-gradient(to right , lightgreen,rgb(223, 241, 162));
+                font-size: 20px;
+                color: rgb(195, 190, 183);
+                margin-bottom: 16px;
+            }
+            section{
+                width: 70%;
+                padding: 6px;
+                margin: 10px 0;
+                margin-right: 16px;
+                background-color: blanchedalmond;
+                display: inline-block;
+            }
+            .pic-wrapper{
+                width: 100%;
+                text-align: center;
+            }
+            .pic-wrapper > img{
+                width: 100%;
+                max-width: 800px;
+               justify-content: baseline;
+
+            }
+            .pic-wrapper > p{
+                text-align: center;
+                font-size: 20px;
+                font-weight: bolder;
+                color: blueviolet;
+            }
+            #desc{
+                width: 100%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #desc > p{
+                background-color: aqua;
+                width: 100%;
+                
+                padding: 10px;
+                color: rgb(216, 161, 79);
+                font-weight: bold;
+                font-size: 30px;
+            }
+            aside{
+                padding: 10px;
+                background-color: aliceblue;
+                box-shadow: 2px 3px 10px black;
+                border-radius: 4px;
+                display: inline-block;
+                width: 25%;
+                vertical-align: top;
+                margin-top: 6px;
+            }
+            .pic-wrapper2{
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid black;
+                padding-bottom: 6px;
+            }
+            .pic-wrapper2 img{
+
+                padding: 14px;
+                width: 320px;
+                max-width: max-content;
+                height: 320px;
+                margin: 2px;
+            }
+            .pic-wrapper2:last-of-type{
+                border-bottom: 0;
+            }
+            /*
+            
+            @media screen  and (max-width: 600px){   /* (<600px) all small mobiles phones like 4.5inch , 5inch etc...*/
+            /*
+            }
+            @media screen  and (min-width: 600px){   /* (>600px) all large screne mobiles phones/devices and protriate mode tablets */
+             /*   
+            }
+            @media screen  and (min-width: 768px){   /* (>768px) medium devices & landscape mode of tablets */
+            /*    
+            }
+            @media screen  and (min-width: 992px){   /* (>992px) laptops & desktop */
+            /*    
+            }
+            @media screen  and (min-width: 1200px){   /* (>1200px) large laptops and desktop*/
+            /*    
+            }
+            */
+    
+            @media screen  and (max-width: 768px){
+                section{
+                    display: block;
+                    width: 100%;
+                }
+                
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Hello</h2>
+        </header>
+        <section>
+            <div class="pic-wrapper">
+                <img src="https://st2.depositphotos.com/1723045/6572/i/600/depositphotos_65725833-stock-photo-rosenborg-castle-in-copenhagen-denmark.jpg" alt="denmark place">
+                <p>Kingdom of Denmark</p>
+             </div>
+             <div id="desc">
+                 <p>The Danish Royal Family inhabit a range of residences around Denmark. Historically all the residences of the royal family were privately owned. With the introduction of the new Constitution in 1849, some of the residences were claimed as property of the "Kingdom of Denmark". Some of the palaces are still privately owned by the Queen or other members of the Royal Family. The Agency for Palaces and Cultural Properties (the Danish equivalent of the Historic Royal Palaces Agency) is responsible for the management and upkeep of some of the royal palaces and gardens.[1][2]
+                    The Danish Royal Family traditionally occupy different royal residences during different seasons of the year. In summer, Queen Margarethe resides at Marselisborg Palace or Graasten Palace. In the winter, she resides at Amalienborg, whereas her residence during spring and autumn is Fredensborg Palace. Sometimes members of the royal family spend time on the Royal Yacht Dannebrog, especially when on official visits overseas and on summer cruises in Danish waters. </p>
+             </div>
+        </section>
+        <aside>
+            <div class="pic-wrapper2">
+                <img src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg">
+                <p>pic-1</p>
+            </div>
+            <div class="pic-wrapper2">
+                <img src="https://i.pinimg.com/originals/44/ce/2c/44ce2cfa6267fde44790205135a78051.jpg">
+                <p>pic-2</p>
+            </div>
+            <div class="pic-wrapper2">
+                <img src="https://ichef.bbci.co.uk/news/999/cpsprodpb/15951/production/_117310488_16.jpg">
+                <p>pic-3</p>
+            </div>
+        </aside>
+        <footer>
+            <h2>bye</h2>
+        </footer>
+    </body>
+</html>
